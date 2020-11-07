@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Link of the problem : http://codeforces.com/contest/9/problem/A
  * Description :
  *
- * @author Najat EL
+ * @author Najat EL Habti
  */
 public class DieRoll {
     static public void main(String[] args) {
