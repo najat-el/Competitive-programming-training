@@ -1,6 +1,11 @@
 package cfa;
 
 import java.util.Scanner;
+/**
+ * Link of the problem : http://codeforces.com/contest/709/problem/A
+ *
+ * @author Najat EL Habti
+ */
 
 public class Juicer {
     static public void main(String[] args){
