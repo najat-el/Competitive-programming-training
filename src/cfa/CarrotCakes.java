@@ -21,17 +21,18 @@ public class CarrotCakes {
         int oven2=d;
 
         // number of cakes's groups
-        int ratio = (int) Math.ceil(n / k);
+        double ratio =  Math.ceil((double)n / k);
         for (int i = 0; i <ratio ; i++) {
             if(oven1<=oven2)
                 oven1+=t;
             else
                 oven2+=t;
         }
+
         if (Math.max(oven1,oven2)<ratio*t)
         System.out.println("YES");
         else
         System.out.println("NO");
-        //TODO : wrong nswer for the input 599 97 54 992
+
     }
 }
