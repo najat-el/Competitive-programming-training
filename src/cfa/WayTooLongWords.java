@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 
 public class WayTooLongWords {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
 
         //number of words
@@ -26,6 +26,24 @@ public class WayTooLongWords {
                 System.out.println(word);
             else
                 System.out.println(word.charAt(0)+""+(word.length()-2)+word.charAt(word.length()-1));
+        }
+    }
+*/
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int counter;
+        int n = scanner.nextInt();
+
+        for (int j = 0; j<n; j++) {
+            String word = scanner.next();
+            if(word.length()<10)
+                System.out.println(word);
+            else {
+                counter=word.length()-2;
+
+                System.out.println(word.charAt(0)+""+ counter +""+ word.charAt(word.length()-1));
+                counter = 0;
+            }
         }
     }
 }

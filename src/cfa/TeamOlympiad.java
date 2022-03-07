@@ -16,9 +16,9 @@ public class TeamOlympiad {
 
         int num = in.nextInt();
 
-        Stack<Integer> prgSkill = new Stack<Integer>();
-        Stack<Integer> mathSkill = new Stack<Integer>();
-        Stack<Integer> peISkill = new Stack<Integer>();
+        Stack<Integer> prgSkill = new Stack<>();
+        Stack<Integer> mathSkill = new Stack<>();
+        Stack<Integer> peISkill = new Stack<>();
 
         for(int i=0;i<num;i++){
             int teamMember = in.nextInt();
@@ -39,5 +39,31 @@ public class TeamOlympiad {
             team.append(String.format("%d %d %d\n",prgSkill.pop(), mathSkill.pop(), peISkill.pop()));
         System.out.print(team.toString());
         in.close();
+
+       /**************** We can solve it using List instead of Stack/
+       /** List<Integer> programming;
+        List<Integer> maths;
+        List<Integer> pe;
+
+        for(i=0; i<n ; i++){
+            switch(scanner.next()){
+                case 1 :
+                    programming.put(i+1);
+                    break;
+                case 2 :
+                    maths.put(i+1);
+                    break;
+                case 3 :
+                    pe.put(i+1);
+                    break;
+            }
+        }
+
+        println(min(programming.size(), maths.size(), pe.size()));
+        if(w>0){
+            for(i=0; i<min(programming.size(), maths.size(), pe.size()), i++ ){
+                println(programming.get(i) + " " + maths(i)+ " " + pe.get(i));
+            }
+        }*/
     }
 }

@@ -15,11 +15,11 @@ public class AntonAndLetters {
         String input=scanner.nextLine();
 
         int result=0;
-        boolean[] markLetter=new boolean[124];
+        boolean[] markLetter=new boolean[123];
 
         for (int i = 1; i <input.length()-1 ; i++) {
 
-            if(markLetter[input.charAt(i)]!=true && input.charAt(i)!=',' &&  input.charAt(i)!=' '){
+            if(markLetter[input.charAt(i)]==false && input.charAt(i)!=',' &&  input.charAt(i)!=' '){
                 result++;
                 markLetter[input.charAt(i)]=true;
             }

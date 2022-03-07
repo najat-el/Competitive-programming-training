@@ -36,4 +36,12 @@ public class NewPassword {
       System.out.println(password);
       scanner.close();
     }
+
+    /**** a more simple way to do it
+     * do {
+     *     for(i=0; i<k; i++){
+     *         password.append((char)97+i)
+     *     }
+     * } while(password.size()<n)
+     */
 }

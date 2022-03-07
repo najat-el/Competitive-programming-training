@@ -24,10 +24,10 @@ public class AntonAndDanik {
         String s=scanner.next();
         for (int i = 0; i <s.length(); i++) {
             // put the i-th char in a string to be able to use the equals method
-            String letter= String.valueOf(s.charAt(i));
-            if("A".equals(letter)){
+            char letter= s.charAt(i);
+            if('A' == letter){
                 wonByAnton++;
-            }else if("D".equals(letter)){
+            }else if('D' == letter){
                 wonByDanik++;
             }
         }
